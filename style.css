@@ -1,0 +1,92 @@
+body {
+    background: red !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, sans-serif;
+
+    /* CENTERING MAGIC */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* BACKGROUND */
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Login Card */
+.card {
+    background: white;
+    padding: 30px;
+    width: 320px;
+    border-radius: 12px;
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+
+    /* animation */
+    animation: pop 0.6s ease;
+}
+
+@keyframes pop {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input:focus {
+    border-color: #667eea;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #667eea;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5563c1;
+}
+
+/* Link */
+a {
+    display: block;
+    margin-top: 15px;
+    color: #667eea;
+    text-decoration: none;
+}
+
